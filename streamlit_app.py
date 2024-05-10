@@ -36,7 +36,7 @@ st.text("🔔Note: Use only English Language as Input")
 st.markdown("*"*100)
 
 #================================================= Lang Chain and Gemini LLM Connection ===============================================================
-os.environ["GEMINI_API"]= "AIzaSyDssnjSoToexad71K-09nJYgnUWcH0SPgw"
+os.environ["GEMINI_API"]= "xxxx"
 llm = ChatGoogleGenerativeAI(model="gemini-pro", convert_system_message_to_human=True,google_api_key=os.environ.get("GEMINI_API"),temperature=0.0)
 #================================================= Loading Whisper Model =============================================================================
 #Base Model
@@ -44,7 +44,7 @@ with open("whisper_base_model.pkl", "rb") as file:
     whisper_model = pickle.load(file)
 #================================================== MYSQL Database Connection ==========================================================================
 db_user = "root"
-db_password = "952427"
+db_password = "xxxxx"
 db_host = "localhost"
 db_name = "train_db"
 #----------------------------------------------------------------------------------------------
