@@ -144,7 +144,7 @@ if 'history' not in st.session_state:
         st.session_state['history'] = []
 
 if 'generated' not in st.session_state:
-        st.session_state['generated'] = ["👋 Hello, Ask Me About Train Schedules 🚊"]
+        st.session_state['generated'] = ["👋 Hello, Ask Me About Train Schedule 🚊"]
 
 if 'past' not in st.session_state:
          st.session_state['past'] = ["hi"]
